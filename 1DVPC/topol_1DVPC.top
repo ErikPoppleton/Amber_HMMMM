@@ -1,0 +1,16 @@
+; Include forcefield parameters
+#include "HMMM.ff/forcefield.itp"
+#include "HMMM.ff/DVPC.itp"
+#include "HMMM.ff/Na+.itp"
+#include "HMMM.ff/MG.itp"
+#include "HMMM.ff/Cl-.itp"
+#include "HMMM.ff/TP3.itp"
+
+[ system ]
+; Name
+1DVPC_in_vacuum
+
+[ molecules ]
+; Compound	#mols
+DVPC  	         1
+

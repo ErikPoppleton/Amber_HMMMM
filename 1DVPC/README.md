@@ -13,7 +13,7 @@ Next, add a box so Gromacs can work with it:
 gmx editconf -f 1DVPC_amber.pdb -o box.pdb -d 2 -bt cubic
 ```
 
-We do not have the .atp and .rtp files required by `pdb2gmx`, but that actually doesn't matter because the topology was trivial to manually generate. Copy or link the forcefield to the current directory You can still use `grompp` to prepare for energy minimization:
+We do not have the .atp and .rtp files required by `pdb2gmx`, but that actually doesn't matter because the topology was trivial to manually generate. Copy or link the forcefield to the current directory and use `grompp` to prepare for energy minimization:
 ```shell
 ln -s ../HMMM.ff .
 gmx grompp -f em.mdp -p topol_1DVPC.top -c box.pdb -o em.tpr

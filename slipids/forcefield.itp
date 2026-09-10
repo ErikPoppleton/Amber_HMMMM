@@ -4,5 +4,11 @@
 ; nbfunc	comb-rule	gen-pairs	fudgeLJ	fudgeQQ
 1		2		yes		0.5000	0.8333
 
+[ atomtypes ]
+      c3     c3   12.0100        0.0     A    3.39967e-01          4.57730e-01 ; 1.91  0.1094 ; DCLE
+      cl     cl   35.4500   -0.16090     A    3.47094e-01          1.10876e+00 ; 1.95  0.2650
+      h2     h2   1.00800   0.092700     A    2.29317e-01          6.56888e-02 ; 1.29  0.0157
+      hc     hc   1.00800   0.062033     A    2.64953e-01          6.56888e-02 ; 1.49  0.0157
+
 #include "ffnonbonded.itp"
 #include "ffbonded.itp"

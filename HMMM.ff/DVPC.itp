@@ -644,8 +644,8 @@ DVPC 3
 #ifdef POSRES
 [ position_restraints ]
 29 1 0.0 0.0 POSRES_FC_LIPID
-14 1 0.0 0.0 POSRES_FC_HMMM 
-68 1 0.0 0.0 POSRES_FC_HMMM 
+17 1 0.0 0.0 POSRES_FC_HMMM 
+53 1 0.0 0.0 POSRES_FC_HMMM 
 #endif
 
 #ifdef DIHRES

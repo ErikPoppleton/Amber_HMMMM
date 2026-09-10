@@ -20,6 +20,7 @@ gmx editconf -f input_amber.pdb -o box.pdb -d 0
 4. `charmmlipid2amber.py` does not fix names in the topology file. Also need to update the path to the forcefield:
 ```shell
 sed -e "s/toppar/HMMM.ff/g" -e "s/DOPC/DVPC/g" -e "s/SOD/Na+/g" -e "s/CLA/Cl-/g" -e "s/TIP3/TP3/g" topol_charmm.top > topol.top
+sed -i "s/
 ```
 
 5. We should now be able to generate a GROMACS minimization file after linking the forcefield:
